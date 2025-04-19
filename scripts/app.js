@@ -40,7 +40,7 @@ const app = Vue.createApp({
     methods: {
         // Fetches random user's name, age, and photo from the API
         getUserProfile() {
-            fetch('http://comp6062.liamstewart.ca/random-user-profile')
+            fetch('https://comp6062.liamstewart.ca/random-user-profile')
                 .then(response => response.json())//convert to JSON
                 .then(data => {
                     this.user.name = data.first_name + ' ' + data.last_name;
@@ -51,7 +51,7 @@ const app = Vue.createApp({
         //Fetches weather details based on user input or gives default values
         getWeather() {
            
-            fetch(`http://comp6062.liamstewart.ca/weather-information?city=${this.weatherInput.city}&province=${this.weatherInput.province}&country=${this.weatherInput.country}`)
+            fetch(`https://comp6062.liamstewart.ca/weather-information?city=${this.weatherInput.city}&province=${this.weatherInput.province}&country=${this.weatherInput.country}`)
                 .then(response => response.json())
                 .then(data => {
                     this.weather.temperature = data.temperature;
