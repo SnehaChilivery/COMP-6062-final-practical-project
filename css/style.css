@@ -1,0 +1,154 @@
+/*Spacing above and below the paragraphs*/
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+/*Footer style for all types of screens with dark background, white text, spacing, and center alignment*/
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+/*styling for name in center and with padding*/
+.name {
+    text-align: center;
+    padding: 20px;
+ 
+}
+/*Input box styling for all the inputs that user has to enter with size, spacing, border, rounded corners */
+.input-box {
+    width: 340px;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/*Spacing above weather output*/  
+.weather-display{
+    margin-top: 15px;
+}
+/*Spacing above dictionary output*/
+.dictionary-display{
+    margin-top: 15px;
+}
+
+/*Extra small and Small screens: : purple background, centered text, adjusted font & box size*/
+@media (max-width: 767px) {
+    /*Body background and Font*/
+    body {
+      background-color: #c791be;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      color: #333;
+    }
+   /*Smaller font for Header 1*/
+    h1 {
+      font-size: 18px;
+    }
+    /*span styling for Name background: background, color, padding, font*/
+    .name-bg {
+        background-color: #a74396;
+        color: #1d0505; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        font-size: 24px;
+    }
+    /*Box styling: size, spacing, color*/
+    .box {
+        padding: 10px;
+        max-width: 360px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f6ecf4;
+    }
+    /*Button styling*/
+    .button {
+        background-color: #9c4d9e;
+        border-color: #9c4d9e;
+    }
+      
+    /*Settings for profile image */
+    .profile-image {
+      width: 90px;
+      height: 90px;
+      border-radius: 60px;
+      margin-bottom: 10px;
+    }
+    /*Footer size for this screens*/
+    footer {
+      font-size: 12px;
+    }
+}
+  
+/*Medium, Large and Extra Large screens*/
+@media (min-width: 768px) {
+    /*Body background and Font*/
+    body {
+      background-color: #f1f8e9;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      color: #333;
+    }
+    /*Font of Header 1*/
+    h1 {
+      font-size: 24px;
+    }
+    /*span styling for Name background*/
+    .name-bg {
+        background-color: #f1f8c6;
+        color: #271d1d;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        font-size: 24px;
+    }
+    /*Box styling:size, border, padding*/
+    .box {
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid #d9d9d9;
+        padding: 20px;
+        max-width: 400px;
+        
+    }
+    /*Button styling: blue background, padding, round edges */
+   .button {
+    background-color: #007bff;
+    color: white;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    }
+    /*Settings for profile image */
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-bottom: 10px;
+    }
+  
+  
+  
+
+}
+  
